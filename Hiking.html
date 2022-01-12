@@ -1,0 +1,462 @@
+<html>
+    <title>Hiking Website</title>
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+        .container
+        {
+            width: 1140px;
+            margin: 0 auto;
+            height: auto;
+        }
+        .navbar
+        {
+            height: auto;
+            width: 100%;
+            border-bottom: 1px solid white;
+            color: rgba(0, 0, 0, 0.774);
+            display: inline-flex;
+        }
+        .logo
+        {
+            width: 20%;
+            float: left;
+        }
+        .menu
+        {
+            width: 80%;
+            float: left;
+        }
+        .menu ul
+        {
+            list-style: none;
+            display: inline-flex;
+            margin-top: 50px;
+            margin-left: 150px;
+        }
+        .menu li
+        {
+            padding: 0px 30px;
+        }
+        .main-div
+        {
+            height: auto;
+            width: 100%;
+            display: inline-block;
+            background-image: url(banner1.png);
+        }
+        .button1
+        {
+            text-decoration: none;
+            font-weight: bold;
+            border: 0px solid white;
+            border-radius: 20px;
+            color: rgba(0, 0, 0, 0.801);
+            background-color: rgba(255, 255, 255, 0.897);
+            padding: 10px 20px;
+        }
+        .second-div
+        {
+            height: auto;
+            width: 100%;
+            display: inline-block;
+        }
+        .heading1
+        {
+            height: auto;
+            width: 100%;
+            text-align: center;
+        }
+        .boxes
+        {
+            height: auto;
+            width: 100%;
+            margin: 20px 0px;
+            display: inline-flex;
+        }
+        .firstbox
+        {
+            height: auto;
+            width: auto;
+            float: left;
+            background-color: rgba(104, 70, 45, 0.822);
+        }
+        .secondbox
+        {
+            height: auto;
+            width: auto;
+            float: left;
+            margin-left: 70px;
+            background-color: rgba(104, 70, 45, 0.822);
+        }
+        .thirdbox
+        {
+            height: auto;
+            width: auto;
+            float: left;
+            margin-left: 70px;
+            background-color: rgba(104, 70, 45, 0.822);
+        }
+        .afterboxes
+        {
+            height: auto;
+            width: 100%;
+            text-align: center;
+            margin: 40px 0px;
+        }
+        .button2
+        {
+            text-decoration: none;
+            font-weight: bold;
+            border: 0px solid rgba(104, 70, 45, 0.822);
+            border-radius: 40px;
+            color: white;
+            background-color: rgba(104, 70, 45, 0.822);
+            padding: 20px 30px;
+        }
+        .third-div
+        {
+            height: auto;
+            width: 100%;
+            margin-top:  20px; 
+            background-image: url(banner2.png);
+            display: inline-block;
+        }
+        .content-left
+        {
+            height: auto;
+            width: 50%;
+            float: left;
+            overflow: hidden;
+        }
+        .content-right
+        {
+            height: auto;
+            width: 50%;
+            float: left;
+            overflow: hidden;
+        }
+        .afterdiscount
+        {
+            height: auto;
+            width: auto;
+            padding: 30px 40px;
+        }
+        .button3
+        {
+            
+            text-decoration: none;
+            font-weight: bold;
+            border: 0px solid rgba(255, 68, 0, 0.753);
+            border-radius: 40px;
+            color: white;
+            background-color: rgba(255, 68, 0, 0.753);
+            padding: 15px 45px;
+        }
+        .forth-div
+        {
+            height: auto;
+            width: 100%;
+            display: inline-block;
+            background-image: url(banner3.png);
+        }
+        .afterdiscount1
+        {
+            height: auto;
+            width: auto;
+            padding: 40px 80px;
+        }
+        .fifth-div
+        {
+            height: 800px;
+            width: 100%;
+            text-align: center;
+            display: inline-block;
+            background-image: url(banner4.png);
+        }
+        .fifth-div h1
+        {
+            color: whitesmoke;
+            padding-top: 270px;
+            font-size: 50px;
+        }
+        .fifth-div h3
+        {
+            color: rgba(189, 189, 189, 0.801);
+            font-weight: lighter; 
+        }
+        .sixth-div
+        {
+            height: auto;
+            width: 100%;
+            text-align: right;
+            background-image: url(banner5.png);
+        }
+        .sixth-div h1
+        {
+            font-size: 70px;
+            padding-top: 380px;
+            padding-bottom: 280px;
+            padding-right: 40px;
+            color: rgba(255, 68, 0, 0.753);
+        }
+        .seventh-div
+        {
+            height: auto;
+            width: 100%;
+            display: inline-block;
+        }
+        .menu1
+        {
+            list-style: none;
+            display: inline-flex;
+            margin-left: 40px;
+        }
+        .menu1 li
+        {
+            padding: 0px 64px;
+        }
+        .menu1 li p
+        {
+            color:rgba(0, 0, 0, 0.801) ;
+        }
+        .eightth-div
+        {
+            height: 500px;
+            width: 100%;
+            text-align: center;
+            background-image: url(banner9.png);
+        }
+        .nineth-div
+        {
+            height: 800px;
+            width: 100%;
+            text-align: center;
+            background-image: url(banner7.png);
+        }
+        .nineth-div h1
+        {
+            font-size: 70px;
+            padding-top: 230px;
+            color: whitesmoke;
+        }
+        .nineth-div h3
+        {
+            font-size: 25px;
+            color:rgba(0, 0, 0, 0.801) ;
+        }
+        .form-div
+		{
+			height: auto;
+			width: 100%;
+			float: left;
+			padding-top: 50px;
+			text-align: center;
+		}
+        .intext
+		{
+			padding: 15px 75px;
+        	border: 1px solid;
+            border-radius: 30px;
+		}
+		.subscribe
+		{
+			padding: 15px 35px;
+            border: 1px solid;
+            border-radius: 30px;
+            background: rgba(0, 0, 0, 0.801);
+            color: whitesmoke;
+		}
+        .tenth-div
+        {
+            height: 600px;
+            width: 100%;
+            background-image: url(banner8.png);
+        }
+        .tenth-left
+        {
+            height: auto;
+            width: 30%;
+            float: left;
+        }
+        .tenth-right
+        {
+            height: auto;
+            width: 70%;
+            margin-top: 250px;
+            display: inline-flex;
+        }
+        .tenth-div h1
+        {
+            color: whitesmoke;
+            padding-top: 250px;
+        }
+        .tenth-div h4
+        {
+            color: whitesmoke;
+            font-weight: lighter;
+        }
+        .footermenu
+        {        
+            color: whitesmoke;
+        	list-style: none;
+        	margin: 0px;
+        	padding: 0px 60px;
+		}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>HOME</li>
+                    <li>MENU</li>
+                    <li>OUR STORY</li>
+                    <li>CONTACT US</li>
+                    <li><i class="fas fa-search"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-div">
+        <div class="container">
+            <h1 style="font-size: 70px;padding-top: 200px;color: rgba(255, 68, 0, 0.753);">IT'S TIME FOR<br> HIKING</h1>
+            <h1 style="color: rgba(0, 0, 0, 0.801);padding-bottom: 25px;">LOREMIPSUM DOLOR</h1>
+            <a href="#" class="button1">READ MORE</a>
+            <p style="color:rgba(0, 0, 0, 0.801) ;padding-top: 15px;padding-bottom: 165px;">Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit, sed do iusmod tempor incididunt ut<br>labore et dolore magna</p>
+        </div>
+    </div>
+    <div class="second-div">
+        <div class="container">
+            <div class="heading1">
+                <h1 style="font-size: 70px;color: rgba(255, 68, 0, 0.753);">LET'S GO</h1>
+                <h3 style="color:rgba(0, 0, 0, 0.801) ;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus lacinia odio vitae vestibulum vestibulum</h3>
+            </div>
+            <div class="boxes">
+                <div class="firstbox">
+                    <img src="card1.png">
+                    <h1 style="color: white;padding-top: 10px;padding-left: 10px;">Lorem Ipsum</h1>
+                    <p style="color: white;padding-bottom: 15px;padding-left: 10px;">Lorem ipsum dolor sit amet,<br>consectetur adipiscing...</p>
+                </div>
+                <div class="secondbox">
+                    <img src="card2.png">
+                    <h1 style="color: white;padding-top: 10px;padding-left: 10px;">Lorem Ipsum</h1>
+                    <p style="color: white;padding-bottom: 15px;padding-left: 10px;">Lorem ipsum dolor sit amet,<br>consectetur adipiscing...</p>
+                </div>
+                <div class="thirdbox">
+                    <img src="card3.png">
+                    <h1 style="color: white;padding-top: 10px;padding-left: 10px;">Lorem Ipsum</h1>
+                    <p style="color: white;padding-bottom: 15px;padding-left: 10px;">Lorem ipsum dolor sit amet,<br>consectetur adipiscing...</p>
+                </div>
+            </div>
+        </div>
+        <div class="afterboxes">
+            <div class="container">
+             <a href="#" class="button2">SHOW MORE</a>
+            </div>
+        </div>
+    </div>
+    <div class="third-div">
+        <div class="content-left">
+            <img src="bcard1.png">
+        </div>
+        <div class="content-right">
+            <h1 style="color: whitesmoke;padding-left: 40px;padding-top: 180px;font-size: 50px;">Discount up to<br>50% All Excursions</h1>
+            <h3 style="color: whitesmoke;padding-left:40px;font-weight: lighter;">Lorem ipsum dolor sit amet,<br>consectetur adipiscingelt, sed diam <br>nonummy nibh euismod tincidunt ut <br>laoreet dolore magna aliquam erat </h3>
+            <div class="afterdiscount">
+                <a href="#" class="button3">READ MORE</a>
+            </div>    
+        </div>
+    </div>
+    <div class="forth-div">
+        <div class="content-left">
+            <h1 style="color: whitesmoke;padding-left: 80px;padding-top: 180px;font-size: 50px;">January's Promo: <br>Buy 1 Get 1 Free!</h1>
+            <h3 style="color: whitesmoke;padding-left:80px;font-weight: lighter;">Lorem ipsum dolor sit amet,<br>consectetur adipiscingelt, sed diam <br>nonummy nibh euismod tincidunt ut <br>laoreet dolore magna aliquam erat </h3>
+            <div class="afterdiscount1">
+                <a href="#" class="button3">READ MORE</a>
+            </div>
+        </div>
+      <div class="content-right">
+            <img src="bcard2.png">
+        </div>
+    </div>
+    <div class="fifth-div">
+        <div class="container">
+            <h1>Hiking in The Mountains</h1>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscingelt, sed diam nonummy nibh euismod tincidunt ut <br>laoreet dolore magna aliquam erat Lorem ipsum dolor sit amet, consectetur adipiscingelt, sed diam <br>nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat</h3>
+        </div>       
+    </div>
+    <div class="sixth-div">
+        <h1>EXPLORE<br> <span style="color: rgba(0, 0, 0, 0.795);">THE WORLD</span></h1>
+    </div>
+    <div class="seventh-div">
+        <div class="container">
+            <ul class="menu1">
+                <li><h1 style="color:rgba(255, 68, 0, 0.753) ;font-size: 30px; ">Lorem Ipsum</h1><br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum</p></li>
+                <li><h1 style="color:rgba(255, 68, 0, 0.753) ;font-size: 30px; ">Lorem Ipsum</h1><br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum</p></li>
+                <li><h1 style="color:rgba(255, 68, 0, 0.753) ;font-size: 30px; ">Lorem Ipsum</h1><br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum</p></li>
+            </ul>
+        </div>
+    </div>
+    <div class="eightth-div">
+        <div class="container">
+            <h1 style="font-size: 70px;padding-top: 80px;color: rgba(0, 0, 0, 0.644);">"</h1>
+            <h3 style="font-size: 25px;color: rgba(0, 0, 0, 0.644);">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut labore et dolor magna aliqua. Ut <br>enim ad minim veniam, quis</h3>
+            <h2 style="font-size: 30px;color: rgba(0, 0, 0, 0.644);">Lorem Ipsum</h2>
+        </div>
+    </div>
+    <div class="nineth-div">
+        <div class="container">
+            <h1>TITLE HERE</h1>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus <br>lacinia odio vitae vestibulum vestibulum.</h3>
+            <form class="form-div">
+                <input class="intext" type="text" placeholder="Your Email">
+                <input class="subscribe" type="submit" name="submit" value="Subscribe">
+            </form>
+        </div>
+    </div>
+    <div class="tenth-div">
+        <div class="container">
+            <div class="tenth-left">
+                <h1>Title Here</h1>
+                <h4>Lorem ipsum dolor sit amet,consectetur<br>adipiscing elit.Aliquam at dignisim<br>nunc,id maximus ex.Etiam nec<br>dignissim elit,at dignissim enim.</h4>
+            </div>
+            <div class="tenth-right">
+                <div class="firstmenu">
+                    <h2 style="padding-left: 60px;color: whitesmoke;">About</h2>
+                    <ul class="footermenu">
+                    <li>History</li>
+                    <li>Our Team</li>
+                    <li>Brand Guidelines</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>                    
+                </ul>
+                </div>
+                <div class="secondmenu">
+                    <h2 style="padding-left: 60px;color: whitesmoke;">Services</h2>
+                    <ul class="footermenu">
+                        <li>How to Order</li>
+                        <li>Our Product</li>
+                        <li>Order Status</li>
+                        <li>Promo</li>
+                        <li>Payment Method</li>                    
+                    </ul>
+                </div>
+                <div class="thirdmenu">
+                    <h2 style="padding-left: 60px;color: whitesmoke;">Other</h2>
+                    <ul class="footermenu">
+                        <li>Contact us</li>
+                        <li>Help</li>
+                        <li>Privacy</li>                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
